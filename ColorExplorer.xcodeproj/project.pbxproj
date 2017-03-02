@@ -54,14 +54,22 @@
 		BBC797961E68A3B0000C7A41 /* ColorExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				BBC797971E68A3B0000C7A41 /* AppDelegate.swift */,
+				BBC797A91E68A48E000C7A41 /* Supporting files */,
 				BBC797991E68A3B0000C7A41 /* ViewController.swift */,
 				BBC7979B1E68A3B0000C7A41 /* Main.storyboard */,
+			);
+			path = ColorExplorer;
+			sourceTree = "<group>";
+		};
+		BBC797A91E68A48E000C7A41 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				BBC797971E68A3B0000C7A41 /* AppDelegate.swift */,
 				BBC7979E1E68A3B0000C7A41 /* Assets.xcassets */,
 				BBC797A01E68A3B0000C7A41 /* LaunchScreen.storyboard */,
 				BBC797A31E68A3B0000C7A41 /* Info.plist */,
 			);
-			path = ColorExplorer;
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
