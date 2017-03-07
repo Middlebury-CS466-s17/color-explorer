@@ -12,6 +12,7 @@
 		BBC7979D1E68A3B0000C7A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC7979B1E68A3B0000C7A41 /* Main.storyboard */; };
 		BBC7979F1E68A3B0000C7A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC7979E1E68A3B0000C7A41 /* Assets.xcassets */; };
 		BBC797A21E68A3B0000C7A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC797A01E68A3B0000C7A41 /* LaunchScreen.storyboard */; };
+		BBC797AB1E6F40AC000C7A41 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC797AA1E6F40AC000C7A41 /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BBC7979E1E68A3B0000C7A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC797A11E68A3B0000C7A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBC797A31E68A3B0000C7A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC797AA1E6F40AC000C7A41 /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BBC797A91E68A48E000C7A41 /* Supporting files */,
 				BBC797991E68A3B0000C7A41 /* ViewController.swift */,
 				BBC7979B1E68A3B0000C7A41 /* Main.storyboard */,
+				BBC797AA1E6F40AC000C7A41 /* ColorModel.swift */,
 			);
 			path = ColorExplorer;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				BBC7979A1E68A3B0000C7A41 /* ViewController.swift in Sources */,
 				BBC797981E68A3B0000C7A41 /* AppDelegate.swift in Sources */,
+				BBC797AB1E6F40AC000C7A41 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 				BBC797A81E68A3B0000C7A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

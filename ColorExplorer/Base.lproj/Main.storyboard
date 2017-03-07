@@ -47,6 +47,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkK-7e-UQS">
+                                <rect key="frame" x="8" y="396" width="343" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -54,6 +61,7 @@
                         <outlet property="blueSlider" destination="cbI-kW-Uf2" id="oZr-fB-4bg"/>
                         <outlet property="colorDisplay" destination="sDq-6d-C04" id="Aho-yD-0j0"/>
                         <outlet property="greenSlider" destination="T0m-1m-IeI" id="hAP-fK-05L"/>
+                        <outlet property="hexLabel" destination="CkK-7e-UQS" id="DA5-ju-2hj"/>
                         <outlet property="redSlider" destination="kvQ-l5-jOW" id="UeT-BI-Qzq"/>
                     </connections>
                 </viewController>

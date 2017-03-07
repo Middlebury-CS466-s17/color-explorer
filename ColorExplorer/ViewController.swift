@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var color:UIColor?{
-        didSet{
-            colorDisplay.backgroundColor = color
-        }
-    }
+//    private var color:UIColor?{
+//        didSet{
+//            updateColor()
+//        }
+//    }
     
+    
+    private var color:ColorModel = ColorModel()
+    
+    private func updateColor(){
+        colorDisplay.backgroundColor = color.uiColor
+        
+        redSlider.value = color.red
+        greenSlider.value = color.green
+        blueSlider.value = color.blue
+        
+        hexLabel.text = color.hexString
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        updateColor()
     }
 
    
@@ -28,14 +41,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet weak var hexLabel: UILabel!
     
     
     @IBAction func sliderUpdate(_ sender: UISlider) {
-        let red = redSlider.value
-        let green = greenSlider.value
-        let blue = blueSlider.value
-        
-        color = UIColor(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue), alpha: 1)
+        color.red = redSlider.value
+        color.green = greenSlider.value
+        color.blue = blueSlider.value
+        updateColor()
     }
     
     
