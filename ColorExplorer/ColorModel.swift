@@ -25,5 +25,9 @@ class ColorModel{
         return String(format: "%02X%02X%02X", Int(red*255), Int(green*255), Int(255*blue))
     }
     
+    var contrastingTextColor:UIColor{
+        let luminance = 0.2126*red + 0.7152*green + 0.0722*blue
+        return luminance > 0.5 ? UIColor.black : UIColor.white
+    }
     
 }

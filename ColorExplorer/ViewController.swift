@@ -20,12 +20,12 @@ class ViewController: UIViewController {
     private var color:ColorModel = ColorModel()
     
     private func updateColor(){
-        colorDisplay.backgroundColor = color.uiColor
+        view.backgroundColor = color.uiColor
         
         redSlider.value = color.red
         greenSlider.value = color.green
         blueSlider.value = color.blue
-        
+        hexLabel.textColor = color.contrastingTextColor
         hexLabel.text = color.hexString
     }
     
@@ -37,10 +37,11 @@ class ViewController: UIViewController {
 
    
     
-    @IBOutlet weak var colorDisplay: UIView!
+
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
+    
     @IBOutlet weak var hexLabel: UILabel!
     
     

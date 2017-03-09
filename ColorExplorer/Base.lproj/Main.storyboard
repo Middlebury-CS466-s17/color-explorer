@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,50 +18,57 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kvQ-l5-jOW">
-                                <rect key="frame" x="14" y="497" width="347" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="if1-cZ-wJX"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-1m-IeI">
-                                <rect key="frame" x="14" y="547" width="347" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="PJu-7c-EQM"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-kW-Uf2">
-                                <rect key="frame" x="14" y="598" width="347" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="fOa-0K-WyM"/>
-                                </connections>
-                            </slider>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDq-6d-C04">
-                                <rect key="frame" x="16" y="28" width="343" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkK-7e-UQS">
-                                <rect key="frame" x="8" y="396" width="343" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pUb-83-Ovu">
+                                <rect key="frame" x="10" y="45" width="647" height="280"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNK-M8-mfS">
+                                        <rect key="frame" x="0.0" y="115" width="319.5" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ltj-yn-7fH">
+                                        <rect key="frame" x="327.5" y="80" width="319.5" height="120"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kvQ-l5-jOW">
+                                                <rect key="frame" x="-2" y="0.0" width="323.5" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="if1-cZ-wJX"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-1m-IeI">
+                                                <rect key="frame" x="-2" y="45" width="323.5" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="PJu-7c-EQM"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-kW-Uf2">
+                                                <rect key="frame" x="-2" y="90" width="323.5" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="fOa-0K-WyM"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" alignment="center" axis="horizontal" distribution="fillEqually"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pUb-83-Ovu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="DqU-O3-UDJ"/>
+                            <constraint firstItem="pUb-83-Ovu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="f4f-PG-gVU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pUb-83-Ovu" secondAttribute="bottom" constant="50" id="sTv-2h-KBk"/>
+                            <constraint firstAttribute="trailing" secondItem="pUb-83-Ovu" secondAttribute="trailing" constant="10" id="yUD-pt-8me"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="blueSlider" destination="cbI-kW-Uf2" id="oZr-fB-4bg"/>
-                        <outlet property="colorDisplay" destination="sDq-6d-C04" id="Aho-yD-0j0"/>
                         <outlet property="greenSlider" destination="T0m-1m-IeI" id="hAP-fK-05L"/>
-                        <outlet property="hexLabel" destination="CkK-7e-UQS" id="DA5-ju-2hj"/>
+                        <outlet property="hexLabel" destination="GNK-M8-mfS" id="cms-0G-6Eu"/>
                         <outlet property="redSlider" destination="kvQ-l5-jOW" id="UeT-BI-Qzq"/>
                     </connections>
                 </viewController>
